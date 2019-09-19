@@ -15,10 +15,6 @@ app.get("/about", (req, res)=>{
   res.render('about');
 });
 
-app.get("/project", (req, res)=>{
-  res.redirect("/");
-})
-
 app.get("/project/:id", (req, res, next)=>{
   const id = req.params.id;
   const project = projects[id];
@@ -26,7 +22,9 @@ app.get("/project/:id", (req, res, next)=>{
     res.render('project', {project});
   }
   else{
-    res.redirect("/");
+    const err = new Error(" Page Not Found");
+    err.status = 404;
+    next(err);
   }
 
 });
@@ -38,7 +36,9 @@ app.use((req, res, next)=>{
 });
 
 app.use((err, req, res, next)=>{
-  res.render("error", {err});
+  res.locals.error=err;
+  res.status(err.status);
+  res.render("error");
 });
 
 app.listen(3000, ()=>{
