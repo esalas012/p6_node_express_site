@@ -35,17 +35,11 @@ app.use((req, res, next)=>{
   const err = new Error(" Page Not Found");
   err.status = 404;
   next(err);
-})
+});
 
 app.use((err, req, res, next)=>{
-  if(err.status >= 100 && err.status < 600){
-    res.status(err.status);
-  }
-  else{
-    res.status(500);
-  }
   res.render("error", {err});
-})
+});
 
 app.listen(3000, ()=>{
   console.log("Listening to port 3000");
