@@ -1,0 +1,74 @@
+{
+  "projects": [
+    {
+      "id":0,
+      "project_name":"Random Quotes",
+      "description":"This is a simple quote generator that displays a quote and changes the background color of the application everytime the button is clicked.",
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "live_link": "https://esalas012.github.io/quotes/",
+      "github_link": "https://github.com/esalas012/quotes",
+      "image_urls":[
+        "http://localhost:3000/static/images/quote-generator/qg1.png",
+        "http://localhost:3000/static/images/quote-generator/qg2.png",
+        "http://localhost:3000/static/images/quote-generator/qg3.png",
+        "http://localhost:3000/static/images/quote-generator/qg4.png"
+      ]
+    },
+    {
+      "id":1,
+      "project_name":"Pagination and Filtering",
+      "description": "This project uses a technique known as pagination to enhance the user experience. These improvements follow a progressive enhancement strategy. These improvements do not affect the core HTML and CSS, and will work with a list of any number of students.",
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "live_link": "https://esalas012.github.io/list-pagination-and-filtering/",
+      "github_link": "https://github.com/esalas012/list-pagination-and-filtering",
+      "image_urls":[
+        "http://localhost:3000/static/images/filtering-pagination/fp1.png",
+        "http://localhost:3000/static/images/filtering-pagination/fp2.png",
+        "http://localhost:3000/static/images/filtering-pagination/fp3.png",
+        "http://localhost:3000/static/images/filtering-pagination/fp4.png"
+      ]
+    },
+    {
+      "id":2,
+      "project_name":"Interactive Form",
+      "description":"This is a user friendly form that validates a user input in real time, and prevents the user from submitting the form if any issues are found. ",
+      "technologies": ["Javascript", "HTML", "CSS", "JQuery"],
+      "live_link": "https://esalas012.github.io/interactive-form/",
+      "github_link": "https://github.com/esalas012/interactive-form",
+      "image_urls":[
+        "http://localhost:3000/static/images/interactive-form/if1.png",
+        "http://localhost:3000/static/images/interactive-form/if2.png",
+        "http://localhost:3000/static/images/interactive-form/if3.png",
+        "http://localhost:3000/static/images/interactive-form/if4.png"
+      ]
+    },
+    {
+      "id":3,
+      "project_name":"Phrase Hunter",
+      "description":"This is a fun and addictive guessing game where the user has to guess the phrase before running out of lives. The user can use the keyboard or click on the letters to play the game.",
+      "technologies": ["Javascript", "HTML", "CSS", "OOP Concepts"],
+      "live_link": "https://esalas012.github.io/phrase-hunter/",
+      "github_link": "https://github.com/esalas012/phrase-hunter",
+      "image_urls":[
+        "http://localhost:3000/static/images/phrase-hunter/ph1.png",
+        "http://localhost:3000/static/images/phrase-hunter/ph2.png",
+        "http://localhost:3000/static/images/phrase-hunter/ph3.png",
+        "http://localhost:3000/static/images/phrase-hunter/ph4.png"
+      ]
+    },
+    {
+      "id":4,
+      "project_name":"Employee Directory",
+      "description":"This employee directory uses employee data from a public API. The data was used to build cards and modals for each employee. ",
+      "technologies": ["Javascript", "HTML", "CSS", "API"],
+      "live_link": "https://esalas012.github.io/employee-directory/",
+      "github_link": "https://github.com/esalas012/employee-directory",
+      "image_urls":[
+        "http://localhost:3000/static/images/employee-directory/ed1.png",
+        "http://localhost:3000/static/images/employee-directory/ed2.png",
+        "http://localhost:3000/static/images/employee-directory/ed3.png",
+        "http://localhost:3000/static/images/employee-directory/ed4.png"
+      ]
+    }
+  ]
+}

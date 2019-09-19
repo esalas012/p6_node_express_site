@@ -1,0 +1,9 @@
+extends layout.pug
+
+block content
+  h1(style="text-align:center") #{err.status} | #{err.message}
+  p(style="text-align:center") We couldn't find what you were looking for, but here is a link to take you back to the projects.
+  a(href="/")
+    p(style="text-align:center; color:blue") ← Back
+    hr
+    p(style="margin:0 50px") #{err.stack}

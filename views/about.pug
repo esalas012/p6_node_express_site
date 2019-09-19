@@ -1,47 +1,41 @@
 extends layout.pug
 
-block content 
+block content
   nav.grid-container.portfolio-breadcrumb
     a(href='/') ← Back
   article.grid-container.portfolio-intro.portfolio-project
     .grid-x
       .cell.small-6.medium-9.large-9
-
-        //- Add your name.
-        h1 Name
-
-        //- Feel free personalize the title below
-        p.lead.text-light
-          | Full Stack JavaScript Developer.
-
-        //- Replace the boilerplate below with your Elevator pitch below.
+        h1 Eduardo Salas
+        p.lead.text-light(style="padding-bottom:20px") Oracle Certified Java Programmer & Full Stack JavaScript Developer.
+        hr
         .portfolio-bio
           p
-            | This is my elevator pitch. It is the elevator pitch to end all elevator pitches. Your mind is blown. Your mortal brain can scarcely process how well my prior experience maps to your open dev position. 
-            | This is my elevator pitch. It is the elevator pitch to end all elevator pitches. Your mind is blown. Your mortal brain can scarcely process how well my prior experience maps to your open dev position.
-            | This is my elevator pitch. It is the elevator pitch to end all elevator pitches. Your mind is blown. Your mortal brain can scarcely process how well my prior experience maps to your open dev position.
-      .cell.portfolio-meta.small-6.medium-2.large-3
+            | Elevator Pitch: HVAC tech by trade, and currently pursuing a Full Stack Javascript Techdegree from TeamTreehouse.com. My skills range from simply troubleshooting and repairing any house appliances to
+            | coding and debugging an application. I adapt quickly. I am also Oracle Certified in Java. If you think I could help you with your project or idea send me a message or give me a call. I would love
+            | to hear more about your ideas.
+
+      .cell.portfolio-meta.small-6.medium-2.large-3(style="border:1px solid black; padding:20px; background-color: #D4D4D4")
         h6 Skills
-
-        //- Replace the text in the li tags below with your own skills.  At this point, you should be able to list at least ten skills.
         ul
+          li HTML
+          li CSS
+          li Javascript
+          li JQuery
+          li AJAX
+          li API's
+          li Node
           li Express
-          li Other cool stuff
-          li Listing my skills
-          li Etc.
-          li Etc. 
-          li Etc.
+          li Pug
+          li OOP Concepts
+          li Java
         h6 Contact Info
-
-        //- Add your own contact info
         ul
-          li 555-555-1234
-          li email@email.com
+          li 555-555-555
+          li username@hotmail.com
 
-        //- Add URLs to the hrefs below to link to your social media accounts.
-        a.button.expanded(href='') LinkedIn
-        a.button.expanded(href='') GitHub
-        a.button.expanded(href='') Twitter
+        a.button.expanded(href='https://www.linkedin.com/in/eddiesalas/', target="_blank") LinkedIn
+        a.button.expanded(href='https://github.com/esalas012' target="_blank") GitHub
+        // a.button.expanded(href='') Twitter
   nav.grid-container.portfolio-breadcrumb
     a(href='/') ← Back
-  
