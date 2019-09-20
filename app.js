@@ -17,21 +17,27 @@ app.get("/about", (req, res)=>{
 
 app.get("/project/:id", (req, res, next)=>{
   const id = req.params.id;
-  const project = projects[id];
   if(id>=0 && id < projects.length){
-    res.render('project', {project});
+  const project = projects[id];
+  const project_imgs = [];
+  for(let i=1; i<project.image_urls.length; i++){
+    project_imgs.push(project.image_urls[i]);
+  }
+  res.render('project', {project, project_imgs});
   }
   else{
-    const err = new Error(" Page Not Found");
+    const err = new Error("Page Not Found");
     err.status = 404;
+    console.log(`${err.status} | ${err.message}`);
     next(err);
   }
 
 });
 
 app.use((req, res, next)=>{
-  const err = new Error(" Page Not Found");
+  const err = new Error("Page Not Found");
   err.status = 404;
+  console.log(`${err.status} | ${err.message}`);
   next(err);
 });
 
